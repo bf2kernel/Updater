@@ -16,8 +16,8 @@ namespace BF_Launcher
     /// </summary>
     public partial class MainWindow : Window
     {
-        private string COMMON_URL = "http://localhost/"; /*server ip*/
-        private string UPDATE_URL = "http://localhost/BF_Launcher/updates/"; /*updates folder*/
+        private string COMMON_URL = "http://195.206.232.197/";
+        private string UPDATE_URL = "http://195.206.232.197/updates/";
         private string CheckConnection_URL = "https://google.com/"; 
         private string ARCH_TYPE = ".zip";
         private string CRITICAL_FILE = "critical.list";
