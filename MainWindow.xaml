@@ -1,0 +1,22 @@
+﻿<Window
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    x:Class="BF_Launcher.MainWindow"
+    Title="Launcher Updater" Height="244.539" Width="453.703" ResizeMode="CanMinimize" WindowStartupLocation="CenterScreen" Background="#FF171717">
+
+    <Grid Margin="0,0,0,1">
+        <Grid Background="#FF171717" UseLayoutRounding="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <ProgressBar x:Name="PB_FILE" HorizontalAlignment="Left" Height="22" Margin="37,41,0,0" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" Background="#FF313131" BorderBrush="#FF848484" Foreground="Orange"/>
+            <ProgressBar x:Name="PB_FULL" HorizontalAlignment="Left" Height="22" Margin="37,94,0,0" VerticalAlignment="Top" Width="373" Grid.ColumnSpan="2" Background="#FF313131" BorderBrush="#FF848484" Foreground="Orange"/>
+            <TextBlock x:Name="L_PROGRESS" HorizontalAlignment="Center" Height="20" Margin="10,121,10,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="428" FontSize="15" TextAlignment="Center" Foreground="White" Grid.ColumnSpan="2"><Span><Run Text="Initialization!"/></Span></TextBlock>
+            <Label x:Name="L_PROGRESS_FILE" Content="Download file:" HorizontalAlignment="Left" Margin="37,10,0,0" VerticalAlignment="Top" Height="31" Width="87" FontSize="12" Foreground="White"/>
+            <Label x:Name="L_PROGRESS_FULL" Content="Total progress:" HorizontalAlignment="Left" Margin="37,63,0,0" VerticalAlignment="Top" Height="31" Width="98" FontSize="12" Foreground="White" RenderTransformOrigin="0.774,-0.193"/>
+            <Button Content="CLOSE" HorizontalAlignment="Center" Height="34" Margin="10,160,94,0" VerticalAlignment="Top" Width="120" Click="Close_Click" Background="Orange" BorderBrush="Orange" Foreground="White" Grid.Column="1"/>
+            <Button x:Name="Button1" Content="Update Launcher" HorizontalAlignment="Left" Height="34" Margin="94,160,0,0" VerticalAlignment="Top" Width="120" Click="Button1_Click" Background="Orange" BorderBrush="Orange" Foreground="White"/>
+        </Grid>
+    </Grid>
+</Window>
